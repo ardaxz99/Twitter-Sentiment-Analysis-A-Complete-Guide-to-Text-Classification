@@ -50,6 +50,8 @@ The dataset used for this project is the [Sentiment140 dataset](https://www.kagg
 
 ## Methods
 
+We employed various methods to extract feature embeddings from the tweet text, which were then used as input for classification models. Below are the feature extraction methods:
+
 ### TF-IDF Vectorization with Unigram
 
 TF-IDF (Term Frequency-Inverse Document Frequency) evaluates the importance of a word in a document relative to the corpus. It converts text data into numerical features for machine learning algorithms by capturing the significance of words based on their frequency and rarity in the corpus.
@@ -105,6 +107,34 @@ ELMo (Embeddings from Language Models) generates context-dependent word embeddin
 ### CLIP
 
 CLIP (Contrastive Language–Image Pre-training) bridges the gap between vision and language by learning visual concepts from text. It uses large-scale natural language supervision to learn joint embeddings for images and their descriptions.
+
+## Classifiers
+
+For sentiment classification, we used a variety of classical machine learning models as well as a single hidden layer neural network. Below are the classifiers employed in this project:
+
+### Classical Machine Learning Models
+
+- `CatBoostClassifier`
+- `DecisionTreeClassifier`
+- `RandomForestClassifier`
+- `ExtraTreesClassifier`
+- `BaggingClassifier`
+- `AdaBoostClassifier`
+- `GradientBoostingClassifier`
+- `KNeighborsClassifier`
+- `LogisticRegression`
+- `SGDClassifier`
+- `XGBClassifier`
+- `LinearSVC`
+
+### Neural Network
+
+In addition to the classical machine learning models, we also implemented a single hidden layer neural network using PyTorch. The neural network architecture consists of:
+- **Input Layer**: Takes in the TF-IDF features.
+- **Hidden Layer**: Contains 128 neurons with ReLU activation.
+- **Output Layer**: A single neuron with Sigmoid activation for binary classification.
+
+The neural network is trained using Binary Cross-Entropy Loss and the Adam optimizer over 300 epochs.
 
 ## Results
 
