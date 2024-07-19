@@ -1,1 +1,150 @@
-# Twitter-Sentiment-Analysis-A-Complete-Guide-to-Text-Classification
+# Twitter Sentiment Analysis - A Complete Guide to Text Classification
+
+This repository presents a comprehensive guide to performing sentiment analysis on a large dataset of tweets. The project involves classifying the sentiment of tweets as positive or negative, providing insights into public opinion on various topics.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Dataset](#dataset)
+- [Goals](#goals)
+- [Methods](#methods)
+  - [TF-IDF Vectorization with Unigram](#tf-idf-vectorization-with-unigram)
+  - [TF-IDF Vectorization with N-grams](#tf-idf-vectorization-with-n-grams)
+  - [Word2Vec Trained from Scratch](#word2vec-trained-from-scratch)
+  - [Doc2Vec Trained from Scratch](#doc2vec-trained-from-scratch)
+  - [Google News Word2Vec](#google-news-word2vec)
+  - [Glove Vectorization](#glove-vectorization)
+  - [Gensim Fasttext Trained from Scratch](#gensim-fasttext-trained-from-scratch)
+  - [BERT](#bert)
+  - [RoBERTa](#roberta)
+  - [Latent Dirichlet Allocation (LDA)](#latent-dirichlet-allocation-lda)
+  - [Universal Sentence Encoder](#universal-sentence-encoder)
+  - [Sentence Transformers](#sentence-transformers)
+  - [ELMo](#elmo)
+  - [CLIP](#clip)
+- [Results](#results)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributors](#contributors)
+- [License](#license)
+
+## Introduction
+
+Sentiment analysis involves classifying text data to determine whether the sentiment is positive or negative. In this project, we analyze a large dataset of tweets to uncover public opinion on various topics.
+
+## Dataset
+
+The dataset used for this project is the [Sentiment140 dataset](https://www.kaggle.com/datasets/kazanova/sentiment140), which contains 1.6 million tweets labeled with sentiment: 0 for negative and 4 for positive. The dataset includes the following columns:
+- `target`: Sentiment label (0 = negative, 4 = positive)
+- `ids`: Tweet ID
+- `date`: Date of the tweet
+- `flag`: Query flag
+- `user`: Username
+- `text`: Tweet content
+
+## Goals
+
+1. To clean and preprocess the tweet data.
+2. To explore the data through various visualizations and descriptive statistics.
+3. To build and evaluate machine learning and deep learning models for sentiment classification.
+
+## Methods
+
+### TF-IDF Vectorization with Unigram
+
+TF-IDF (Term Frequency-Inverse Document Frequency) evaluates the importance of a word in a document relative to the corpus. It converts text data into numerical features for machine learning algorithms by capturing the significance of words based on their frequency and rarity in the corpus.
+
+### TF-IDF Vectorization with N-grams
+
+Extending TF-IDF to N-grams captures more contextual information by considering combinations of words. This approach enhances the model's understanding of word dependencies and phrases, providing richer features for text data.
+
+### Word2Vec Trained from Scratch
+
+Word2Vec converts text data into numerical vectors by capturing semantic relationships between words. It uses either the Continuous Bag of Words (CBOW) or Skip-gram models to predict the context of words in a sentence, creating dense word vectors.
+
+### Doc2Vec Trained from Scratch
+
+Doc2Vec extends Word2Vec to generate vector representations of entire documents. It uses Distributed Memory (DM) and Distributed Bag of Words (DBOW) models to capture semantic relationships between sentences and paragraphs.
+
+### Google News Word2Vec
+
+The Google News Word2Vec model is a pre-trained Word2Vec model trained on a large corpus of news articles. It provides high-quality embeddings that capture a wide range of semantic relationships and contextual understandings.
+
+### Glove Vectorization
+
+GloVe (Global Vectors for Word Representation) is a pre-trained word embedding model that uses aggregated global word-word co-occurrence statistics. It captures semantic relationships between words by leveraging the overall statistical information of a corpus.
+
+### Gensim Fasttext Trained from Scratch
+
+FastText extends Word2Vec by representing words as a bag of character n-grams, capturing sub-word information. This approach addresses out-of-vocabulary (OOV) words and generates more accurate word vectors.
+
+### BERT
+
+BERT (Bidirectional Encoder Representations from Transformers) is a transformer-based model that reads entire sequences of words simultaneously. This bidirectional approach captures the context of words based on their surroundings, improving the understanding of meaning.
+
+### RoBERTa
+
+RoBERTa (Robustly Optimized BERT Pretraining Approach) is an improved version of BERT with larger training data, longer training periods, and dynamic masking. It removes the Next Sentence Prediction (NSP) task and focuses on masked language modeling.
+
+### Latent Dirichlet Allocation (LDA)
+
+LDA is a generative probabilistic model used for topic modeling. It discovers underlying topics in a collection of documents by representing each document as a mixture of topics and each topic as a distribution over words.
+
+### Universal Sentence Encoder
+
+The Universal Sentence Encoder (USE) encodes text into fixed-length vectors that capture semantic meaning. It uses a transformer-based architecture to generate embeddings that excel at capturing contextual information of sentences.
+
+### Sentence Transformers
+
+Sentence Transformers generate dense vector representations for sentences, capturing their semantic meaning. They extend traditional transformers by fine-tuning them for generating meaningful sentence embeddings.
+
+### ELMo
+
+ELMo (Embeddings from Language Models) generates context-dependent word embeddings using a bi-directional LSTM. It captures the meaning of words based on their context within a sentence, providing more accurate word representations.
+
+### CLIP
+
+CLIP (Contrastive Language–Image Pre-training) bridges the gap between vision and language by learning visual concepts from text. It uses large-scale natural language supervision to learn joint embeddings for images and their descriptions.
+
+## Results
+
+The performance of our sentiment analysis models was evaluated using various metrics. The results demonstrate the effectiveness of different methods in accurately predicting the sentiment of tweets.
+
+## Installation
+
+### Prerequisites
+
+- Python 3.8 or higher
+- pip (Python package installer)
+
+### Setting Up a Virtual Environment
+
+```bash
+python -m venv env
+source env/bin/activate  # On Windows use `env\Scripts\activate`
+```
+
+
+### Installing Dependencies
+
+```
+git clone https://github.com/ardaxz99/Twitter-Sentiment-Analysis-A-Complete-Guide-to-Text-Classification.git
+cd Twitter-Sentiment-Analysis
+pip install -r requirements.txt
+```
+
+## Usage
+
+Execute the Jupyter notebook to reproduce the results:
+
+```
+jupyter nbconvert --to notebook --execute main.ipynb
+```
+
+## Contributors
+
+- **Arda Baris Basaran**
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
