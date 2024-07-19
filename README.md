@@ -206,6 +206,13 @@ cd Twitter-Sentiment-Analysis
 pip install -r requirements.txt
 ```
 
+### Downloading the Dataset
+
+1. Download the [Sentiment140 dataset](https://www.kaggle.com/datasets/kazanova/sentiment140) as a CSV file named `training.1600000.processed.noemoticon.csv`.
+2. Copy the downloaded CSV file to the working directory of the project.
+
+
+
 ## Usage
 
 Execute the Jupyter notebook to reproduce the results:
