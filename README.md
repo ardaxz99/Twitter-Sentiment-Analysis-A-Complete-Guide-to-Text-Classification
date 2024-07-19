@@ -154,7 +154,7 @@ This project has covered a wide range of methods for sentiment analysis on Twitt
 2. **Hybrid Embeddings**
    - Combine different embedding methods (e.g., BERT embeddings with TF-IDF features) to capture both contextual and statistical information, enhancing model performance.
 
-2. **Contextualized Embeddings*:
+2. **Contextualized Embeddings**:
    - Consider using newer models like T5 (Text-to-Text Transfer Transformer) or XLNet, which have shown improvements over BERT in some tasks.
 
 ### Advanced Classifiers and Techniques
