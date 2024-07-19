@@ -178,11 +178,15 @@ This project has covered a wide range of methods for sentiment analysis on Twitt
 
 3. **Additional Data Cleaning and Augmentation Techniques**
    - Ensure comprehensive preprocessing steps, such as handling emojis, URLs, mentions, and special characters in tweets.
+   - Besides back translation, consider using techniques like Easy Data Augmentation (EDA), which includes operations like synonym replacement, random insertion, etc.
 
 ### Handling Imbalanced Data
 
 - Techniques like undersampling, oversampling, or using class weights in your loss function can help manage class imbalances effectively. Even though our dataset has no imbalance, if it had, we would need to handle it using these methods.
 
+### Model Optimization
+
+- Use techniques like Grid Search or Random Search for hyperparameter tuning to optimize your models' performance for both classification and text embedding extraction.
 
 ### Evaluation and Interpretation
 
