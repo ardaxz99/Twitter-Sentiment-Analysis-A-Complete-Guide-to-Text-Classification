@@ -178,7 +178,6 @@ This project has covered a wide range of methods for sentiment analysis on Twitt
 
 3. **Additional Data Cleaning and Augmentation Techniques**
    - Ensure comprehensive preprocessing steps, such as handling emojis, URLs, mentions, and special characters in tweets.
-   - **Augmentation Techniques**: Consider using data augmentation techniques like synonym replacement, random insertion, and random deletion to increase the diversity of your training data.
 
 ### Handling Imbalanced Data
 
