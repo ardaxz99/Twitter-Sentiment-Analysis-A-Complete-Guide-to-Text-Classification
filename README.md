@@ -23,7 +23,7 @@ This repository presents a comprehensive guide to performing sentiment analysis 
   - [ELMo](#elmo)
   - [CLIP](#clip)
 - [Results](#results)
-- [Future Work](#futurework)
+- [Future Work](#future-work)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributors](#contributors)
