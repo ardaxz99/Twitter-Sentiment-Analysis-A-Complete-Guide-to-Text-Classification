@@ -165,9 +165,6 @@ This project has covered a wide range of methods for sentiment analysis on Twitt
    - **Convolutional Neural Networks (CNNs)**: Use CNNs to capture local features in text data, which can improve the model's ability to identify key patterns.
    - **Transformers**: Utilize full transformer-based models directly for classification tasks to take advantage of their powerful context-awareness.
 
-3. **Transfer Learning**
-   - Use pre-trained models from other sentiment analysis tasks and fine-tune them on your dataset to leverage existing knowledge and improve performance.
-
 ### Data Augmentation
 
 1. **Synthetic Data Generation**
