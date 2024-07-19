@@ -154,6 +154,9 @@ This project has covered a wide range of methods for sentiment analysis on Twitt
 2. **Hybrid Embeddings**
    - Combine different embedding methods (e.g., BERT embeddings with TF-IDF features) to capture both contextual and statistical information, enhancing model performance.
 
+2. **Contextualized Embeddings*:
+   - Consider using newer models like T5 (Text-to-Text Transfer Transformer) or XLNet, which have shown improvements over BERT in some tasks.
+
 ### Advanced Classifiers and Techniques
 
 1. **Ensemble Methods**
@@ -163,15 +166,24 @@ This project has covered a wide range of methods for sentiment analysis on Twitt
 2. **Deep Learning Models**
    - **Recurrent Neural Networks (RNNs) with Attention Mechanism**: Implement RNNs with attention mechanisms to focus on important words or phrases in the tweets.
    - **Convolutional Neural Networks (CNNs)**: Use CNNs to capture local features in text data, which can improve the model's ability to identify key patterns.
-   - **Transformers**: Utilize full transformer-based models directly for classification tasks to take advantage of their powerful context-awareness.
+   - **Transformers**: Utilize full transformer-based models directly for classification tasks to take advantage of their powerful context awareness.
 
 ### Data Augmentation
 
 1. **Synthetic Data Generation**
-   - Apply methods like SMOTE for text data to generate synthetic examples, especially for balancing the dataset and addressing class imbalance issues.
+   - Apply methods like SMOTE for text data to generate synthetic examples, especially for balancing the dataset and addressing class imbalance issues. Although our dataset is balanced, these techniques can be useful for other datasets with class imbalance.
 
 2. **Back Translation**
    - Translate tweets to another language and then back to English to create more training data with slight variations, enhancing model robustness.
+
+3. **Additional Data Cleaning and Augmentation Techniques**
+   - Ensure comprehensive preprocessing steps, such as handling emojis, URLs, mentions, and special characters in tweets.
+   - **Augmentation Techniques**: Consider using data augmentation techniques like synonym replacement, random insertion, and random deletion to increase the diversity of your training data.
+
+### Handling Imbalanced Data
+
+- Techniques like undersampling, oversampling, or using class weights in your loss function can help manage class imbalances effectively. Even though our dataset has no imbalance, if it had, we would need to handle it using these methods.
+
 
 ### Evaluation and Interpretation
 
